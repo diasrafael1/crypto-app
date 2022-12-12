@@ -23,7 +23,7 @@ export default function QuotationsList() {
           </TouchableOpacity>
         ))}
       </View>
-      <ScrollView></ScrollView>
+      {/* <ScrollView></ScrollView> */}
     </>
   );
 }
