@@ -43,7 +43,10 @@ export default function Home() {
             return coin.id;
           }}
           renderItem={({ item }) => (
-            <TouchableOpacity style={styles.coinContainer}>
+            <TouchableOpacity
+              style={styles.coinContainer}
+              onPress={() => navigation.navigate("CryptoInfo", item)}
+            >
               <Image style={styles.coinImage} source={{ uri: item.image }} />
               <Text style={styles.coinName}>{item.name}</Text>
               <Text style={styles.coinSymbol}>{item.symbol}</Text>
