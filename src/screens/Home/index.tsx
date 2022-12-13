@@ -1,6 +1,7 @@
 import {
   SafeAreaView,
   Text,
+  TouchableOpacity,
   StatusBar,
   View,
   FlatList,
@@ -42,11 +43,11 @@ export default function Home() {
             return coin.id;
           }}
           renderItem={({ item }) => (
-            <View style={styles.coinContainer}>
+            <TouchableOpacity style={styles.coinContainer}>
               <Image style={styles.coinImage} source={{ uri: item.image }} />
               <Text style={styles.coinName}>{item.name}</Text>
               <Text style={styles.coinSymbol}>{item.symbol}</Text>
-            </View>
+            </TouchableOpacity>
           )}
         />
       </View>
