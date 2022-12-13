@@ -33,8 +33,7 @@ export default function Home() {
     <SafeAreaView style={styles.container}>
       <StatusBar backgroundColor="orange" barStyle="light-content" />
       <Text style={styles.title}>
-        Selecione a <Text style={styles.titleCrypto}>criptomoeda</Text> para
-        obter informações
+        Selecione a <Text style={styles.titleCrypto}>criptomoeda</Text> para obter informações
       </Text>
       <View style={styles.coinsContainer}>
         <FlatList

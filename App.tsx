@@ -16,12 +16,15 @@ export default function App() {
           headerTitleStyle: { color: "#fff" },
         }}
       >
+        <Stack.Screen name="Home" component={Home} options={{ title: "CryptoApp" }} />
         <Stack.Screen
-          name="Home"
-          component={Home}
-          options={{ title: "CryptoApp" }}
+          name="CryptoInfo"
+          component={CryptoInfo}
+          options={{
+            headerTintColor: "#fff",
+            animationEnabled: false,
+          }}
         />
-        <Stack.Screen name="CryptoInfo" component={CryptoInfo} />
       </Stack.Navigator>
     </NavigationContainer>
   );
